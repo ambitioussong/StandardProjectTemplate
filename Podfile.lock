@@ -1,18 +1,31 @@
 PODS:
+  - FyberMediationTapjoy (11.9.1.1):
+    - FyberSDK (~> 8.4)
+  - FyberSDK (8.11.0)
+  - IronSourceSDK (6.5.2.0)
   - Masonry (1.0.2)
+  - SpinKit (1.2.0)
   - Toast (3.1.0)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
+  - FyberMediationTapjoy (~> 11.9.1.1)
+  - FyberSDK (~> 8.11.0)
+  - IronSourceSDK (~> 6.5.2.0)
   - Masonry (~> 1.0.2)
+  - SpinKit (~> 1.2.0)
   - Toast (~> 3.0)
   - YYModel (~> 1.0.4)
 
 SPEC CHECKSUMS:
+  FyberMediationTapjoy: 35d0893fbc52156dc723aa282163b7928c62e5ca
+  FyberSDK: 5c1cb47a67aaecc11518eeec5f19b6cea2f4b1f7
+  IronSourceSDK: 2463b775e7768d04e80e0410b547b7b5f41b12ab
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  SpinKit: 65906a8b534a4e14cbfd3f8b0b6c329131faef4a
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 7983b231844a05aa97a3cfeacb276b1cb110f84d
+PODFILE CHECKSUM: b5eec40194e27dbb7841f3ca12a975b2d4558f42
 
 COCOAPODS: 1.0.0

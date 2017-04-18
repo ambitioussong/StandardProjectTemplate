@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		670D55401EA5B114005CF9CA /* SSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670D553F1EA5B114005CF9CA /* SSRootViewController.m */; };
+		670D55461EA5E3B2005CF9CA /* SSOWManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 670D55451EA5E3B2005CF9CA /* SSOWManager.m */; };
+		670D554A1EA5E3E4005CF9CA /* FybrManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 670D55491EA5E3E4005CF9CA /* FybrManager.m */; };
+		670D554D1EA5E3F3005CF9CA /* TapjoyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 670D554C1EA5E3F3005CF9CA /* TapjoyManager.m */; };
+		670D55611EA62268005CF9CA /* FullScreenLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 670D55601EA62268005CF9CA /* FullScreenLoadView.m */; };
 		678B32291EA5ACC000DB7D54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 678B32221EA5ACC000DB7D54 /* AppDelegate.m */; };
 		678B322B1EA5ACC000DB7D54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 678B32281EA5ACC000DB7D54 /* main.m */; };
 		678B32961EA5AD2C00DB7D54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 678B322E1EA5AD2C00DB7D54 /* Assets.xcassets */; };
@@ -53,6 +57,17 @@
 		670D553D1EA5AFFA005CF9CA /* SSLayoutMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSLayoutMacros.h; sourceTree = "<group>"; };
 		670D553E1EA5B114005CF9CA /* SSRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSRootViewController.h; sourceTree = "<group>"; };
 		670D553F1EA5B114005CF9CA /* SSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSRootViewController.m; sourceTree = "<group>"; };
+		670D55441EA5E3B2005CF9CA /* SSOWManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSOWManager.h; sourceTree = "<group>"; };
+		670D55451EA5E3B2005CF9CA /* SSOWManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSOWManager.m; sourceTree = "<group>"; };
+		670D55481EA5E3E4005CF9CA /* FybrManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FybrManager.h; sourceTree = "<group>"; };
+		670D55491EA5E3E4005CF9CA /* FybrManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FybrManager.m; sourceTree = "<group>"; };
+		670D554B1EA5E3F3005CF9CA /* TapjoyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapjoyManager.h; sourceTree = "<group>"; };
+		670D554C1EA5E3F3005CF9CA /* TapjoyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapjoyManager.m; sourceTree = "<group>"; };
+		670D55551EA60638005CF9CA /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		670D55571EA6063E005CF9CA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		670D55591EA60646005CF9CA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		670D555F1EA62268005CF9CA /* FullScreenLoadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullScreenLoadView.h; sourceTree = "<group>"; };
+		670D55601EA62268005CF9CA /* FullScreenLoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullScreenLoadView.m; sourceTree = "<group>"; };
 		678B32061EA5A95400DB7D54 /* StandardProjectTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandardProjectTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		678B32211EA5ACC000DB7D54 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		678B32221EA5ACC000DB7D54 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -139,10 +154,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		670D55431EA5E24B005CF9CA /* OW */ = {
+			isa = PBXGroup;
+			children = (
+				670D55441EA5E3B2005CF9CA /* SSOWManager.h */,
+				670D55451EA5E3B2005CF9CA /* SSOWManager.m */,
+				670D55481EA5E3E4005CF9CA /* FybrManager.h */,
+				670D55491EA5E3E4005CF9CA /* FybrManager.m */,
+				670D554B1EA5E3F3005CF9CA /* TapjoyManager.h */,
+				670D554C1EA5E3F3005CF9CA /* TapjoyManager.m */,
+			);
+			path = OW;
+			sourceTree = "<group>";
+		};
+		670D554E1EA600C9005CF9CA /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		670D555E1EA62268005CF9CA /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				670D555F1EA62268005CF9CA /* FullScreenLoadView.h */,
+				670D55601EA62268005CF9CA /* FullScreenLoadView.m */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
 		678B31FD1EA5A95400DB7D54 = {
 			isa = PBXGroup;
 			children = (
 				678B32201EA5ACC000DB7D54 /* StandardProjectTemplate */,
+				670D554E1EA600C9005CF9CA /* ThirdParty */,
 				678B322C1EA5AD2C00DB7D54 /* Plists */,
 				678B322D1EA5AD2C00DB7D54 /* Resources */,
 				678B322F1EA5AD2C00DB7D54 /* Utils */,
@@ -177,6 +222,8 @@
 		678B32241EA5ACC000DB7D54 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				670D555E1EA62268005CF9CA /* Loading */,
+				670D55431EA5E24B005CF9CA /* OW */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -418,6 +465,9 @@
 		C9C88C3220896BC005C6A8D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				670D55591EA60646005CF9CA /* CoreData.framework */,
+				670D55571EA6063E005CF9CA /* CFNetwork.framework */,
+				670D55551EA60638005CF9CA /* AdSupport.framework */,
 				6426B62F9036703B3EDC75A2 /* libPods-StandardProjectTemplate.a */,
 			);
 			name = Frameworks;
@@ -457,6 +507,7 @@
 				TargetAttributes = {
 					678B32051EA5A95400DB7D54 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5A4J2973DH;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -553,6 +604,7 @@
 				678B32991EA5AD2C00DB7D54 /* NSDate+Calculate.m in Sources */,
 				678B32A91EA5AD2C00DB7D54 /* NSString+Size.m in Sources */,
 				678B32BD1EA5AD2C00DB7D54 /* UIViewController+GradientBGColor.m in Sources */,
+				670D554D1EA5E3F3005CF9CA /* TapjoyManager.m in Sources */,
 				678B32AF1EA5AD2C00DB7D54 /* UIImage+GradientColor.m in Sources */,
 				678B32BA1EA5AD2C00DB7D54 /* UIView+JellyShake.m in Sources */,
 				678B32A41EA5AD2C00DB7D54 /* NSString+BalanceReason.m in Sources */,
@@ -569,8 +621,11 @@
 				678B32B41EA5AD2C00DB7D54 /* UIView+Animation.m in Sources */,
 				678B32B01EA5AD2C00DB7D54 /* UIImage+grayScale.m in Sources */,
 				678B329B1EA5AD2C00DB7D54 /* NSMutableDictionary+safe.m in Sources */,
+				670D554A1EA5E3E4005CF9CA /* FybrManager.m in Sources */,
 				678B32AE1EA5AD2C00DB7D54 /* UIImage+colorToImage.m in Sources */,
+				670D55461EA5E3B2005CF9CA /* SSOWManager.m in Sources */,
 				678B32B11EA5AD2C00DB7D54 /* UIImage+MaskedColor.m in Sources */,
+				670D55611EA62268005CF9CA /* FullScreenLoadView.m in Sources */,
 				678B329C1EA5AD2C00DB7D54 /* NSError+Message.m in Sources */,
 				678B32AD1EA5AD2C00DB7D54 /* UIColor+hexstringToUIColor.m in Sources */,
 				678B32A71EA5AD2C00DB7D54 /* NSString+JsonDataConvertor.m in Sources */,
@@ -680,15 +735,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = "";
-				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
-					StandardProjectTemplate/Support,
-					"Files/StandardProjectTemplate-Prefix.pch",
-				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5A4J2973DH;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "StandardProjectTemplate/Support Files/StandardProjectTemplate-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Plists/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jsong.StandardProjectTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaysong.mygift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1dda6390-c18b-4dd2-b795-f669ae7510d9";
+				PROVISIONING_PROFILE_SPECIFIER = GiftTest_Dev;
 			};
 			name = Debug;
 		};
@@ -698,15 +755,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = "";
-				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
-					StandardProjectTemplate/Support,
-					"Files/StandardProjectTemplate-Prefix.pch",
-				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5A4J2973DH;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "StandardProjectTemplate/Support Files/StandardProjectTemplate-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Plists/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jsong.StandardProjectTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaysong.mygift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1dda6390-c18b-4dd2-b795-f669ae7510d9";
+				PROVISIONING_PROFILE_SPECIFIER = GiftTest_Dev;
 			};
 			name = Release;
 		};
