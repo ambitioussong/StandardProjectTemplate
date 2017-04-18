@@ -9,13 +9,15 @@ build/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata
+xcuserdata/
 *.xccheckout
 *.moved-aside
 DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+*.svn/
+xcshareddata/
 
 # CocoaPods
 #
@@ -24,9 +26,10 @@ DerivedData
 # http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
 #
 #Pods/
+Pods/
+Podfile.lock
 
 Carthage/
 
-#Random Shit
 *.DS_Store
 
