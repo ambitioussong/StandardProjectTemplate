@@ -1,0 +1,18 @@
+PODS:
+  - Masonry (1.0.2)
+  - Toast (3.1.0)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - Masonry (~> 1.0.2)
+  - Toast (~> 3.0)
+  - YYModel (~> 1.0.4)
+
+SPEC CHECKSUMS:
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 7983b231844a05aa97a3cfeacb276b1cb110f84d
+
+COCOAPODS: 1.0.0
