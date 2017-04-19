@@ -78,8 +78,11 @@ typedef enum{
     if (self.placement.isContentReady) {
         [self.placement showContentWithViewController:viewController];
     } else if (kTapjoyOWConnectedFailed == self.tapjoyOWConnectStatus) {
+        [[FullScreenLoadView sharedInstance] startLoading];
         [self startWithAppId:self.appId withPlacementId:self.placementID withUserId:self.userId];
-    } else {
+    } else if (kTapjoyOWConnectedStarted == self.tapjoyOWConnectStatus) {
+        [[FullScreenLoadView sharedInstance] startLoading];
+    } else if (kTapjoyOWConnectedSucceed == self.tapjoyOWConnectStatus) {
         [[FullScreenLoadView sharedInstance] startLoading];
         [self requestForContent];
     }
@@ -118,6 +121,9 @@ typedef enum{
 
 - (void)requestDidSucceed:(TJPlacement*)placement {
     self.isDuringRequest = NO;
+    if ([[FullScreenLoadView sharedInstance] stillLoading]) {
+        [[FullScreenLoadView sharedInstance] stopLoading];
+    }
 }
 
 - (void)requestDidFail:(TJPlacement*)placement error:(NSError*)error {
@@ -132,10 +138,7 @@ typedef enum{
 }
 
 - (void)contentIsReady:(TJPlacement*)placement {
-    if ([[FullScreenLoadView sharedInstance] stillLoading]) {
-        [[FullScreenLoadView sharedInstance] stopLoading];
-        [self.placement showContentWithViewController:self.targetViewController];
-    }
+    [self.placement showContentWithViewController:self.targetViewController];
 }
 
 - (void)contentDidAppear:(TJPlacement*)placement {
